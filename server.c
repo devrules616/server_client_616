@@ -6,10 +6,10 @@
 #include <string.h>
 
 int main(){
-  int welcomeSocket, newSocket;
-  char buffer[1024];
-  struct sockaddr_in serverAddr;
-  struct sockaddr_storage serverStorage;
+  int welcomeSocket, newSocket;		// newSocket is used to establish a new connection between client and server.
+  char buffer[1024];				// buffer is used to copy the data into it and transmit
+  struct sockaddr_in serverAddr;	// server_address struct
+  struct sockaddr_storage serverStorage; // used to set the size of  server_storage
   socklen_t addr_size;
 
   /*---- Create the socket. The three arguments are: ----*/
