@@ -6,10 +6,10 @@
 #include <string.h>
 
 int main(){
-  int clientSocket;
-  char buffer[1024];
-  struct sockaddr_in serverAddr;
-  socklen_t addr_size;
+  int clientSocket;				 // this is the socket variable
+  char buffer[1024];			 // this is where we will store the recieved message and  use it to print it too
+  struct sockaddr_in serverAddr; // server_addresss_struct
+  socklen_t addr_size;			 // address size
 
   /*---- Create the socket. The three arguments are: ----*/
   /* 1) Internet domain 2) Stream socket 3) Default protocol (TCP in this case) */
